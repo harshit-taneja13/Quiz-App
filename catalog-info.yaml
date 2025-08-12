@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: quiz-application
+  description: A quiz application component.
+  tags:
+    - quiz
+spec:
+  type: service
+  system: quiz-platform
+  lifecycle: production
+  owner: team-quiz
+  dependsOn:
+    - mongodb
